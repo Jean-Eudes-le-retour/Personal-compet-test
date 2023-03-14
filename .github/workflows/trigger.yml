@@ -26,4 +26,4 @@ jobs:
             -F 'participant=${{ github.repository }}' \
             -F 'token=${{ github.token }}' \
             -F 'opponent=${{ github.event.inputs.opponent }}' \
-            https://webots.cloud/run_competition.php
+            https://benchmark.webots.cloud/run_competition.php
