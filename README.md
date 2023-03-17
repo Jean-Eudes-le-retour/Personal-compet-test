@@ -6,6 +6,23 @@
 
 [![webots.cloud - Competition](https://img.shields.io/badge/webots.cloud-Competition-007ACC)][1]
 
+This competition only works with benchmark.webots.cloud. Here are the modifications I did:
+
+changed [run.yml](.github/workflows/run.yml#L54) with:
+
+``` yaml
+      - name: Record Animation and Update Performance
+        id: webots_test
+        uses: Jean-Eudes-le-retour/competition-record-action@main
+```
+
+and change the PHP request in [trigger.yml](.github/workflows/trigger.yml#L29):
+
+``` yaml
+https://benchmark.webots.cloud/run_competition.php
+```
+
+
 ## Description
 
 <span id="description">
